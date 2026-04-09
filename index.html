@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dress Up Game For Audrey ˚.🎀༘⋆</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+       </div>
+</div>
+
+  <div id="app">
+    <header class="topbar">
+      <button id="resetBtn" class="resetBtn">Reset</button>
+      
+  <div class="title">
+    Dress Up Game For Audrey ˚.🎀༘⋆
+  </div>
+
+      <div class="progress">
+Memories: <span id="memCount">0</span>/<span id="memTotal">11</span>
+      </div>
+      <button id="showLetterBtn" class="letterBtn hidden">
+  ✉ Show Letter Again
+</button>
+
+    </header>
+
+    <main class="layout">
+      <!-- Left: Scene -->
+      <section class="scene">
+  <div class="room">
+    <img class="bg" src="assets/ui/room.png" alt="room" />
+
+    <!-- Character -->
+    <div class="character">
+  <img id="layerBase" class="layer" src="assets/character/base.png" />
+  <img id="layerBottom" class="layer" />
+  <img id="layerTop" class="layer" />
+  <img id="layerShoes" class="layer" />
+<img id="layerAcc1" class="layer" />
+<img id="layerAcc2" class="layer" />
+<img id="layerAcc3" class="layer" />
+</div>
+
+
+    <button id="mirrorBtn" class="mirrorBtn">
+      Look in the Mirror
+    </button>
+  </div>
+
+ <div class="letterText">Hello! This isn't just another dress up game. Try different combinations. 
+Look in the mirror. See what comes back to you.
+If nothing appears, try again✨ 
+Refresh the page to clear all outfits, your progress will be saved unless you press 'reset'.
+All the best! </div>
+</section>
+
+      <!-- Right: Wardrobe -->
+      <section class="wardrobe">
+        <div class="tabs">
+          <button class="tab active" data-cat="top">Top</button>
+          <button class="tab" data-cat="bottom">Bottom</button>
+          <button class="tab" data-cat="shoes">Shoes</button>
+          <button class="tab" data-cat="acc">Accessory</button>
+        </div>
+
+        <div id="grid" class="grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Overlay for photo + caption -->
+  <div id="overlay" class="overlay hidden">
+    <div class="overlayCard">
+      <img id="overlayImg" class="overlayImg" alt="memory" />
+      <div id="overlayCaption" class="overlayCaption"></div>
+      <button id="overlayClose" class="overlayClose">Back to Wardrobe</button>
+    </div>
+  </div>
+
+  <!-- Pixel letter screen -->
+  <div id="letterScreen" class="overlay hidden">
+    <div class="letterCard">
+      <div class="letterTitle">A Letter for you!</div>
+      <div id="letterText" class="letterText"></div>
+      <button id="letterClose" class="overlayClose">Close</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
